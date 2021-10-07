@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+h2 {
+  margin: 20px 5px;
+  text-align: left;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.IdCard,
+.Greetings,
+.Random,
+.BoxColor {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.IdCard img {
+  margin: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+.BoxColor {
+  display: flex;
+  justify-content: center;
+}
+
+.creditCards {
+  display: flex;
+}
+
+.creditCards img {
+  max-width: 60px;
+  padding: 5px;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CreditCard {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.number {
+  margin: 25px 0 0 0;
+  font-size: 30px;
+}
+
+.expAndBank {
+  margin-top: 15px;
+  display: flex;
+  width: 70%;
+}
+
+.owner {
+  margin: 0;
+  float: left;
+}
+
+.bank {
+  margin-left: 25px;
 }
