@@ -11,7 +11,10 @@ const CreditCard = ({
   return (
     <div style={{ color, backgroundColor: bgColor }} className="CreditCard">
       <div className="imgWrapper">
-        <img src={`/img/${type}${type === 'Visa' ? '.png' : '.svg'}`} />
+        <img
+          src={`/img/${type}${type === 'Visa' ? '.png' : '.svg'}`}
+          alt="card"
+        />
       </div>
       <p className="number">
         {'\u2022'.repeat(4).concat(' ').repeat(3)}
@@ -23,7 +26,7 @@ const CreditCard = ({
             Expires {expirationMonth.toString().padStart(2, '0')}/
             {expirationYear}
           </span>
-          <span class="bank">{bank}</span>
+          <span className="bank">{bank}</span>
         </p>
       </div>
       <p className="owner">{owner}</p>
