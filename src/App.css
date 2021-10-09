@@ -109,3 +109,45 @@ h2 {
 .bank {
   margin-left: 25px;
 }
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 35px;
+}
+
+.DriverCard {
+  background-color: #425cbb;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DriverCard p {
+  margin: 0;
+}
+
+.driverInfo {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.DriverCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.car {
+  font-size: 18px;
+  font-weight: 400;
+}
