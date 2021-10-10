@@ -157,3 +157,17 @@ h2 {
   font-size: 18px;
   font-weight: 400;
 }
+
+.usersList {
+  width: 100%;
+}
+
+.usersList img {
+  height: 100px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
