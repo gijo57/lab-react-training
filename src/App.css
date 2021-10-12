@@ -175,3 +175,7 @@ li {
 .hidden {
   visibility: hidden;
 }
+
+.sortButtons {
+  display: flex;
+}

@@ -7,6 +7,7 @@ class Facebook extends Component {
     super();
     this.state = {
       searchTerm: '',
+      users: profiles,
     };
   }
 
@@ -14,17 +15,33 @@ class Facebook extends Component {
     this.setState({ searchTerm: event.target.value });
   };
 
+  handleSort = (type) => {
+    let sortedUsers;
+    sortedUsers = this.state.users.sort((a, b) =>
+      a[type].localeCompare(b[type])
+    );
+    this.setState({ users: sortedUsers });
+  };
+
   render() {
     const { searchTerm } = this.state;
-    console.log(searchTerm);
+
     return (
       <div>
         <form>
           <label htmlFor="userSearch">Search users:</label>
-          <input onInput={this.handleSearch}></input>
+          <input id="userSearch" onInput={this.handleSearch}></input>
         </form>
+        <div className="sortButtons">
+          Sort by:
+          <button onClick={() => this.handleSort('firstName')}>
+            First name
+          </button>
+          <button onClick={() => this.handleSort('lastName')}>Last name</button>
+          <button onClick={() => this.handleSort('country')}>Country</button>
+        </div>
         <ul className="usersList">
-          {profiles
+          {this.state.users
             .filter((profile) => {
               return (
                 profile.firstName
