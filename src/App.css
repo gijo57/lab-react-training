@@ -179,3 +179,15 @@ li {
 .sortButtons {
   display: flex;
 }
+
+.SignupPage {
+  margin: 5em auto;
+}
+
+.signupForm {
+  margin: 0 auto;
+  background-color: rgb(174, 199, 233);
+  width: 30em;
+  padding: 2em;
+  border-radius: 0.5em;
+}
